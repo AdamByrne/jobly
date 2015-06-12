@@ -1,0 +1,111 @@
+@font-face {
+    src: url(Moon.otf);
+    font-family: Moon;
+}
+
+@font-face {
+    src: url(Roboto.ttf);
+    font-family: Roboto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.outer {
+    height: 100%;
+    width: 100%;
+    background-color: #00a8ff;
+    display: table;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: Moon;
+    padding-bottom: 24px;
+    letter-spacing: 10px;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.form {
+    margin-top: 24px;
+}
+
+input {
+    border-radius: 8px;
+    border-color: #fff;
+    border-style: solid;
+    font-family: Moon;
+    letter-spacing: 3px;
+    background-color: transparent;
+    padding: 0 24px 0 24px;
+    border-width: 2px;
+    color: #fff;
+    width: 236px;
+    height: 44px;
+}
+
+button {
+    font-family: Moon;
+    letter-spacing: 3px;
+    color: #00a8ff;
+    background-color: #fff;
+    border: none;
+    border: solid #fff 2px;
+    border-radius: 8px;
+    width: 200px;
+    height: 48px;
+    margin-left: 24px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+:focus {
+    outline: none;
+}
+
+@media (max-width: 640px) {
+    input {
+        margin-bottom: 12px;
+    }
+    button {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+    p {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}
