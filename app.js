@@ -37,6 +37,6 @@ app.controller('NewJobCtrl', ['$scope', 'mainJobs', function ($scope, mainJobs) 
         job.name = "";
         job.desc = "";
         job.price = "";
-        window.location = "/";
+        window.location = "#/";
     }
 }]);
