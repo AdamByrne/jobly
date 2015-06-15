@@ -1,0 +1,18 @@
+<div class="col-md-6 col-centered">
+    <h3>Post a new job...</h3>
+    <br>
+    <form>
+        <input type="text" class="form-control" placeholder="Your Name" ng-model='job.user'>
+        <br>
+        <input type="text" class="form-control" placeholder="Job Name" ng-model='job.name'>
+        <br>
+        <textarea class="form-control" placeholder="Job Description" ng-model='job.desc'></textarea>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">$</span>
+            <input type="text" class="form-control" placeholder="Price of Job" ng-model='job.price'>
+        </div>
+        <br>
+        <button class="btn btn-success btn-block" ng-click='addJob(job)'>Post Job</button>
+    </form>
+</div>
