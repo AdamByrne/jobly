@@ -1,18 +1,21 @@
-<div class="col-md-6 col-centered">
+<div class="col-md-6 col-centered text-center jumbotron">
     <h3>Here are some jobs you might like...</h3>
     <br>
     <div class="panel panel-default" ng-repeat='job in jobs'>
         <div class="panel-heading">
-            <h3 class="panel-title">{{job.name}}</h3>
+            <h2 class="panel-title"><b>{{job.name}}</b></h2>
         </div>
         <div class="panel-body">
-            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;${{job.price}}&nbsp;&nbsp;
-            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;{{job.user}}
+            <h4>
+            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;{{job.user}}<br>
+             <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;{{job.email}}<br>
+             <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;${{job.price}}&nbsp;&nbsp;<br>
+ </h4>
             <br>
-            <br>{{job.desc}}
+            <br><h4>{{job.desc}}</h4>
             <br>
-            <br>
-            <button class="btn btn-primary">Apply</button>
+
         </div>
     </div>
 </div>
+<br><br>

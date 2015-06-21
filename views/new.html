@@ -1,10 +1,12 @@
-<div class="col-md-6 col-centered">
-    <h3>Post a new job...</h3>
+<div class="col-md-6 col-centered text-center jumbotron">
+    <h2>Post a new job...</h2>
     <br>
     <form>
         <input type="text" class="form-control" placeholder="Your Name" ng-model='job.user'>
         <br>
         <input type="text" class="form-control" placeholder="Job Name" ng-model='job.name'>
+        <br>
+        <input type="phone" class="form-control" placeholder="Email address" ng-model="job.email">
         <br>
         <textarea class="form-control" placeholder="Job Description" ng-model='job.desc'></textarea>
         <br>

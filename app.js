@@ -16,7 +16,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 }]);
 
 app.factory('mainJobs', function ($firebaseArray) {
-    var ref = new Firebase('https://opus-dev.firebaseio.com/jobs');
+    var ref = new Firebase('https://jobly.firebaseio.com/jobs');
     return $firebaseArray(ref);
 });
 
@@ -31,12 +31,14 @@ app.controller('NewJobCtrl', ['$scope', 'mainJobs', function ($scope, mainJobs) 
             user: job.user,
             name: job.name,
             desc: job.desc,
-            price: job.price
+            price: job.price,
+            email: job.email
         });
         job.user = "";
         job.name = "";
         job.desc = "";
         job.price = "";
+        job.email = "";
         window.location = "#/";
-    }
+    };
 }]);
